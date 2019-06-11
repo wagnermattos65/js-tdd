@@ -1,24 +1,30 @@
 {
-  "name": "js-tdd",
-  "version": "1.0.0",
-  "description": "Biblioteca curso JS com TDD",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wagnermattos65/js-tdd.git"
-  },
-  "keywords": [
-    "js",
-    "tdd",
-    "library"
-  ],
-  "author": "Wagner Mattos <github@wagnermattos.com> (https://wagnermattos.com/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wagnermattos65/js-tdd/issues"
-  },
-  "homepage": "https://github.com/wagnermattos65/js-tdd#readme"
+	"name": "js-tdd",
+	"version": "1.0.0",
+	"description": "Biblioteca curso JS com TDD",
+	"main": "index.js",
+	"scripts": {
+		"lint": "npx eslint src/*.js",
+		"prepush": "npm run lint",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wagnermattos65/js-tdd.git"
+	},
+	"keywords": [ "js", "tdd", "library" ],
+	"author": "Wagner Mattos <github@wagnermattos.com> (https://wagnermattos.com/)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/wagnermattos65/js-tdd/issues"
+	},
+	"homepage": "https://github.com/wagnermattos65/js-tdd#readme",
+	"devDependencies": {
+		"eslint": "^5.16.0",
+		"eslint-config-airbnb": "^17.1.0",
+		"eslint-plugin-import": "^2.17.3",
+		"eslint-plugin-jsx-a11y": "^6.2.1",
+		"eslint-plugin-react": "^7.13.0",
+		"husky": "^2.4.0"
+	}
 }
